@@ -14,18 +14,19 @@ int main()
 
     for(i=0; i<n;i++)
     {
-        printf("Enter the number of coefficients of the %dth exponent:",i);
+        printf("Enter the coefficient of the %dth exponent:",i);
         scanf("%d", &p[i].coeff);
-        p[i].exp=1;
+        p[i].exp=i;
     }
     printf("The polynomial is:");
 
-    for(i=n;i>=0;i--)
+    for(i=n-1;i>=0;i--)
     {
         if (p[i].coeff!=0)
         {
-            printf("+ %dX^%d", p[i].coeff,p[i].exp);
+            printf("%dX^%d + ", p[i].coeff,p[i].exp);
         }
     }
-    printf("/n");
+   
+    
 }
