@@ -1,4 +1,4 @@
-# C-Programming
+# S2_Programming_in_C
 
 These are simple programs that are written using C Programs. It consists of:
 1)
